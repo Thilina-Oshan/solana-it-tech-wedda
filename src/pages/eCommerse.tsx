@@ -19,48 +19,49 @@ interface Project {
 const eCommerseSection = () => {
   const projects: Project[] = [
     {
-      title: "AI Event ChatBot ",
-      description: "Full-featured online shopping platform with payment integration, inventory management, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Nova Mart Ecom ",
+      description: "A scalable and user-friendly eCommerce solution with product search, secure checkout, inventory tracking, and admin management built for modern businesses..",
+      image: "/src/img/EcomTwo.jpeg",
+      technologies: ["React", "Typescript"],
       rating: 5,
-      testimonial: "Cutting-edge technology implementation. Perfect for my AI specialization project.",
-      student: "Priya Singh",
-      demoUrl: " https://solana-it.github.io/eventbot-chatbot/",
-      codeUrl: "https://github.com/solana-it/eventbot-chatbot.git"
+      testimonial: "A complete solution for launching online stores. Very clean and professional!.",
+      student: "Chanuka Silva",
+      demoUrl: " https://solana-it.github.io/novamart-ecom-site",
+      codeUrl: "https://github.com/solana-it/novamart-ecom-site.git"
+    },
+
+    {
+      title: "Click N Buy eCommerce Platform",
+      description: "A scalable and user-friendly eCommerce solution with product search, secure checkout, inventory tracking, and admin management built for modern businesses..",
+      image: "/src/img/EcomTwo.jpeg",
+      technologies: ["React", "Typescript"],
+      rating: 5,
+      testimonial: "A complete solution for launching online stores. Very clean and professional!.",
+      student: " Ishanka Silva",
+      demoUrl: " https://solana-it.github.io/clicknbuy-ecom-site/",
+      codeUrl: "https://github.com/solana-it/clicknbuy-ecom-site.git"
     },
     {
-      title: "AI Chat Assistant",
-      description: "A Financial Management System tracks, manages, and analyzes financial activities like budgeting, expenses, income, and reporting efficiently.",
-      image: "/src/img/AI.jpeg",
-      technologies: ["React", "Node.js",  "Stripe"],
+     title: "Click N Buy eCommerce Platform",
+      description: "A scalable and user-friendly eCommerce solution with product search, secure checkout, inventory tracking, and admin management built for modern businesses..",
+      image: "/src/img/EcomTwo.jpeg",
+      technologies: ["React", "Typescript"],
       rating: 5,
-      testimonial: "Professional quality code and excellent documentation. Highly recommended!",
-      student: "Amisha Silva",
-      demoUrl: "https://solana-it.github.io/ai-chat-assistant/",
-      codeUrl: "https://github.com/solana-it/ai-chat-assistant.git"
+      testimonial: "A complete solution for launching online stores. Very clean and professional!.",
+      student: " Ishanka Silva",
+      demoUrl: " https://solana-it.github.io/clicknbuy-ecom-site/",
+      codeUrl: "https://github.com/solana-it/clicknbuy-ecom-site.git"
     },
     {
-      title: "AI Chatbot Application",
-      description: "Intelligent chatbot with natural language processing and machine learning capabilities.",
-      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      technologies: ["React", "Node.js"],
+      title: "Smart eCommerce Platform",
+      description: "A scalable and user-friendly eCommerce solution with product search, secure checkout, inventory tracking, and admin management built for modern businesses..",
+      image: "/src/img/EcomFour.jpeg",
+      technologies: ["React", "Typescript"],
       rating: 5,
-      testimonial: "Cutting-edge technology implementation. Perfect for my AI specialization project.",
-      student: "Sneha Sharma",
-      demoUrl: " https://solana-it.github.io/language-learning-assistant/",
-      codeUrl: "https://github.com/solana-it/language-learning-assistant.git"
-    },
-    {
-      title: "Social Media Analytics",
-      description: "Real-time social media monitoring and analytics dashboard with sentiment analysis.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      technologies: ["React", "D3.js", "Python", "PostgreSQL"],
-      rating: 5,
-      testimonial: "Amazing visualization and data processing. Got me placed in a top tech company!",
-      student: "Rohit Kumar",
-      demoUrl: "https://example.com/analytics-demo",
-      codeUrl: "https://github.com/your-user/analytics-dashboard"
+      testimonial: "A complete solution for launching online stores. Very clean and professional!.",
+      student: "Sandesh Fernando",
+      demoUrl: " https://solana-it.github.io/solid-shop-showcase/",
+      codeUrl: "https://github.com/solana-it/solid-shop-showcase.git"
     },
     {
       title: "Blockchain Voting System",
@@ -88,7 +89,7 @@ const eCommerseSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {projects.slice(0, 3).map((project, index) => (
+          {projects.slice(0, 10).map((project, index) => (
             <Card key={index} className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border-0 shadow-lg">
               <div className="relative overflow-hidden h-48">
                 <img 
@@ -152,53 +153,8 @@ const eCommerseSection = () => {
           ))}
         </div>
 
-      {/*   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {projects.slice(3, 5).map((project, index) => (
-            <Card key={index + 3} className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border-0 shadow-lg">
-              <div className="md:flex">
-                <div className="md:w-1/2">
-                  <div className="relative overflow-hidden h-48 md:h-full">
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
-                <div className="md:w-1/2 p-6 flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl font-bold text-tech-dark">{project.title}</h3>
-                      <div className="flex items-center space-x-1">
-                        {[...Array(project.rating)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 fill-tech-orange text-tech-orange" />
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-gray-600 mb-4">{project.description}</p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.technologies.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="secondary" className="bg-tech-grey text-tech-dark">
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                    <div className="bg-tech-grey rounded-lg p-3 mb-4">
-                      <p className="text-sm text-gray-600 italic">"{project.testimonial}"</p>
-                      <p className="text-sm font-semibold text-tech-blue mt-1">- {project.student}</p>
-                    </div>
-                  </div>
-                  <Link to="/ViewMore">
-                    <Button className="w-full bg-tech-blue hover:bg-tech-blue/90 text-white">
-                      View More
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </div>
- */}
+       
+ 
         <div className="text-center">
           <div className="bg-gradient-to-r from-tech-blue to-tech-green rounded-2xl p-8 text-white">
             <h3 className="text-3xl font-bold mb-4">Want to See Your Project Here?</h3>
